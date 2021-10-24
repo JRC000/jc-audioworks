@@ -14,12 +14,13 @@
 			top:0;
 		}	
 		nav {
-            
+            height:90px;
 		}
 		.logo {
+            position:fixed;
 			height:40px;
 			width:40px;
-            margin-right:15px;
+            right:1vw;
 		}
 		.fullscreen-bg {
    			position: fixed;
@@ -33,14 +34,14 @@
 		.fullscreen-bg__video {
 			position: absolute;
 			top: 0;
-			left: 175px;
+			left: 100px;
 			width: 100%;
 			height: 100%;
 			object-fit:cover;
 		}
         button {
-            margin-right:25vw;
-            position:;
+            left:30vw;
+            position:fixed;
         }
         .album-art {
             height:100px;
@@ -58,17 +59,41 @@
             font-style: normal;
             font-size:15pt;
         }
+        .subhead {
+            
+        }
         .title {
+            left:63vw;
             letter-spacing:5px;
-            padding-right:15px;
+            right:5vw;
         }
         .dropdown-color {
             background-color:#333333;
             text-decoration-color:white;
         }
-@media only screen and (min-width:620px) {
-    iframe {
-        width:100px;
+        .btn {
+            position:fixed;
+        }
+        ul {
+            position:fixed;
+            left:30vw;
+        }
+        p {
+            font-family: interstate, sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+@media only screen and (max-width:750px) {
+    
+    button {
+
+    }
+    .title {
+        display:flex;
+        width:220px;
+    }
+    nav {
+        height:150px;
     }
         }
 	  </style>
@@ -92,10 +117,10 @@
 		</div>
           </ul>
 		</div>
-		<ul class="navbar-nav ms-auto title" href="#">Jacob Carter — Audio Works</ul>
+		<ul class="navbar-nav ms-auto title">Jacob Carter<p>Audio Works</p></ul>
         <img class="logo" src="images/personallogo.png" alt="jacob carter">
 	  </nav>
-      <iframe style="border: 0; width: 350px; height: 100vh;" src="https://bandcamp.com/EmbeddedPlayer/album=4010248961/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://hiddensoundcollective.bandcamp.com/album/digital-artifacts">Digital Artifacts by Ponyboy</a></iframe>
+      <iframe style="border: 0; width: 28vw; height: 100vh;" src="https://bandcamp.com/EmbeddedPlayer/album=4010248961/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://hiddensoundcollective.bandcamp.com/album/digital-artifacts">Digital Artifacts by Ponyboy</a></iframe>
 	  <div class="fullscreen-bg">
 			<video loop muted autoplay class="fullscreen-bg__video">
 				<source src="videos/HYPERSPEKTIV.mp4" type="video/mp4">

@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Audio Portfolio">
+    <meta name="author" content="Jacob Carter">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jacob Carter - Audio Works</title>
+    <title>Jacob Carter — Audio Works</title>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/wzb5odp.css">
 	<style>
@@ -20,8 +21,8 @@
 		}
 		.logo {
             position:fixed;
-			height:40px;
-			width:40px;
+			height:60px;
+			width:60px;
             right:1vw;
 		}
 		.fullscreen-bg {
@@ -44,6 +45,7 @@
         button {
             left:30vw;
             position:fixed;
+            top:4vh;
         }
         .album-art {
             height:100px;
@@ -61,17 +63,21 @@
             font-style: normal;
             font-size:15pt;
         }
-        .subhead {
-            
-        }
         .title {
-            left:63vw;
+            position:fixed;
+            left:50vw;
             letter-spacing:5px;
             right:5vw;
+            top:4vh;
+            padding-right:60px;
+            width:400px:
         }
         .dropdown-color {
             background-color:#333333;
             text-decoration-color:white;
+        }
+        .dropdown-menu {
+            width:320px;
         }
         .btn {
             position:fixed;
@@ -85,18 +91,7 @@
             font-weight: 200;
             font-style: normal;
         }
-@media only screen and (max-width:750px) {
-    
-    button {
-
-    }
-    .title {
-        display:flex;
-        width:220px;
-    }
-    nav {
-        height:150px;
-    }
+@media only screen and (max-width:400px) {
     iframe {
         width:100vw;
     }
@@ -104,7 +99,7 @@
 	  </style>
 </head>
   <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark text text-light">
+  	<nav class="navbar navbar-expand-sm navbar-dark bg-dark text text-light">
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 	      <ul class="navbar-nav ms-auto">
@@ -113,16 +108,16 @@
 			More Music
 		  </button>
 		  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item text-start" href="https://open.spotify.com/album/52gnk0usFhd8KEM61brkH9?si=Bd6TGLUKQay1Aqh4EFD0zQ">Digital Artifacts<img class="album-art rounded float-start" src="images/digitalartifacts.jpg"></a></li>
-			<li><a class="dropdown-item text-start" href="https://open.spotify.com/album/5JYlRqaFG3GmPnu3yQEA7L?si=hdzTt4DqSR-SyK7hi2c8ig">Camp Hoopla<img class="album-art rounded float-start" src="images/camphoopla.jpg"></a></li>
-			<li><a class="dropdown-item text-start" href="https://open.spotify.com/album/35lkL8sVJuF3AOMOYNr1vm?si=Pl3n3r5oSKGp__MtVz-HMQ">Ponyboy Demos<img class="album-art rounded float-start" src="images/ponyboydemos.png"></a></li>
-			<li><a class="dropdown-item text-start" href="https://open.spotify.com/album/4EO5qnc2P0mYfJAsrTbs3Q?si=h13y2W6aT6-D8dVy8JngBw">Ponyboy<img class="album-art rounded float-start" src="images/ponyboy.jpg"></a></li>
-            <li><a class="dropdown-item text-start" href="https://soundcloud.com/user-515206622/sets/this-shall-pass-soundtrack">This Shall Pass Soundtrack<img class="this-shall-pass rounded float-start" src="images/thisshallpass.jpg"></a></li>
+            <li><a class="dropdown-item text-start" href="https://open.spotify.com/album/52gnk0usFhd8KEM61brkH9?si=Bd6TGLUKQay1Aqh4EFD0zQ"><img class="album-art rounded float-start" src="images/digitalartifacts.jpg">Digital Artifacts</a></li>
+			<li><a class="dropdown-item text-start" href="https://open.spotify.com/album/5JYlRqaFG3GmPnu3yQEA7L?si=hdzTt4DqSR-SyK7hi2c8ig"><img class="album-art rounded float-start" src="images/camphoopla.jpg">Camp Hoopla</a></li>
+			<li><a class="dropdown-item text-start" href="https://open.spotify.com/album/35lkL8sVJuF3AOMOYNr1vm?si=Pl3n3r5oSKGp__MtVz-HMQ"><img class="album-art rounded float-start" src="images/ponyboydemos.png">Ponyboy Demos</a></li>
+			<li><a class="dropdown-item text-start" href="https://open.spotify.com/album/4EO5qnc2P0mYfJAsrTbs3Q?si=h13y2W6aT6-D8dVy8JngBw"><img class="album-art rounded float-start" src="images/ponyboy.jpg">Ponyboy</a></li>
+            <li><a class="dropdown-item text-start" href="https://soundcloud.com/user-515206622/sets/this-shall-pass-soundtrack"><img class="this-shall-pass rounded float-start" src="images/thisshallpass.jpg">This Shall Pass Soundtrack</a></li>
 		  </ul>
 		</div>
           </ul>
 		</div>
-		<ul class="navbar-nav ms-auto title">Jacob Carter<p>Audio Works</p></ul>
+		<div class="navbar-nav ms-auto title">Jacob Carter<p>Audio Works</p></div>
         <img class="logo" src="images/personallogo.png" alt="jacob carter">
 	  </nav>
       <iframe src="https://bandcamp.com/EmbeddedPlayer/album=4010248961/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://hiddensoundcollective.bandcamp.com/album/digital-artifacts">Digital Artifacts by Ponyboy</a></iframe>

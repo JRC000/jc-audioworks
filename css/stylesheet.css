@@ -1,4 +1,4 @@
-iframe {
+        iframe {
             width: 28vw;
             height: 100vh;
 			position:fixed;
@@ -7,6 +7,7 @@ iframe {
 		}	
 		nav {
             height:90px;
+            width:100vw;
 		}
 		.logo {
             position:fixed;
@@ -68,17 +69,14 @@ iframe {
         .dropdown-menu {
             width:320px;
         }
-        .btn {
-            position:fixed;
+        .about {
+            left:85vw;
+            padding-right:10px;
+            top:70vh;
         }
-.about {
-    left:85vw;
-    padding-right:10px;
-    top:70vh;
-}
-.about-text {
-    padding:15px;
-}
+        .about-text {
+            padding:15px;
+        }
         ul {
             position:fixed;
             left:30vw;
@@ -88,10 +86,19 @@ iframe {
             font-weight: 200;
             font-style: normal;
         }
-@media only screen and (max-width:600px) {
-    nav {
-        height:150px;
+@media only screen and (max-width:960px) {
+    .about {
+        left:70vw;
+    }
         }
+@media only screen and (max-width:600px) {
+    .title {
+        font-size:11pt;
+    }
+    .logo {
+        height:45px;
+        width:45px;
+    }
 @media only screen and (max-width:400px) {
     iframe {
         width:100vw;
